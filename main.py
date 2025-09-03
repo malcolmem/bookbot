@@ -12,9 +12,9 @@ def main():
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
     
-    for item in sorted_dict:
-        if item[0].isalpha():
-            print(item)
+    for a, b in sorted_dict:
+        if a.isalpha():
+            print(f"{a}: {b}")
         else:
             pass
     print("============= END ===============")

@@ -8,7 +8,8 @@ def sort_on(items):
     return items[1]
 
 def get_chars_dict(text):
-    chars_dict = Counter(text)
+    lower_chars = text.lower()
+    chars_dict = Counter(lower_chars)
     return chars_dict
 
 def get_sorted_dict(chars_dict):
